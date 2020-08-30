@@ -48,6 +48,12 @@ public class Library {
         return Arrays.toString(currentlyAvailable);
     }
 
+    /**
+     * this method return the name of the book that you want to issued.
+     *
+     * @param bookName the name of the book.
+     */
+
     public void issueBook(String bookName) {
         System.out.println(bookName + " " + "is  issue for you from the library");
     }
