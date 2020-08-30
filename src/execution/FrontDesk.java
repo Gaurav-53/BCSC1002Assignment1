@@ -11,12 +11,7 @@ import definitions.Book;
 public class FrontDesk {
     public static void main(String[] args) {
        Book book = new Book("let us java","abc","1234567891234");
-       /* book.setBookName("Let us Java ");
-        book.setAuthorName("Yashavant Kanetkar");
-        book.setNumberISBN("9789388176385");*/
-        System.out.println(book.getBookName());
-        System.out.println(book.getAuthorName());
-        System.out.println(book.getNumberISBN());
+        System.out.println(book);
 
     }
 }
