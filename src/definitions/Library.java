@@ -12,9 +12,9 @@ public class Library {
     private Book[] currentlyAvailable;
 
     public Library() {
-        this.currentlyAvailable = new Book[100];
+        this.currentlyAvailable = new Book[10];
         for (int i = 0; i < currentlyAvailable.length; i++) {
-            currentlyAvailable[i] = new Book();
+            currentlyAvailable[i] = new Book("book" + (i + 1));
         }
     }
 
@@ -55,6 +55,12 @@ public class Library {
      */
 
     public void issueBook(String bookName) {
-        System.out.println(bookName + " " + "is  issue for you from the library");
+        System.out.println(bookName + " " + "is  issued for you from the library");
+    }
+
+    public void myIssueBook() {
+        for (Book book : currentlyAvailable) {
+            System.out.println(book);
+        }
     }
 }

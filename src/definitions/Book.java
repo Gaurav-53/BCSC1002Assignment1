@@ -14,15 +14,15 @@ public class Book {
     private String numberISBN;
 
     public Book() {
-        bookName = "Let us Java";
-        authorName = "Yashavant";
-        numberISBN = "34567892378654";
+        bookName = "book";
+        authorName = "unknown";
+        numberISBN = "unknown";
     }
 
-    public Book(String bookName, String authorName, String numberISBN) {
+    public Book(String bookName) {
         this.bookName = bookName;
-        this.authorName = authorName;
-        this.numberISBN = numberISBN;
+        authorName = "unknown";
+        numberISBN = "unknown";
     }
 
     /**

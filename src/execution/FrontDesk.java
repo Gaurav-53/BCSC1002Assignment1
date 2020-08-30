@@ -35,7 +35,13 @@ public class FrontDesk {
             userinput = scanner.nextInt();
             switch (userinput) {
                 case ISSUE_BOOK:
-                    System.out.println("Enter the name of the book you want to issue:");
+                    System.out.println("please enter the your details for a issuing the book:");
+                    System.out.println("please enter your name");
+                    System.out.println("firstname");
+                    scanner.nextLine();
+                    String details = scanner.nextLine();
+                    student.yourFirstName(details);
+                    System.out.println("Enter the name of the book that you want to issue:");
                     scanner.nextLine();
                     String bookName = scanner.nextLine();
                     library.issueBook(bookName);
@@ -45,11 +51,15 @@ public class FrontDesk {
                     scanner.nextLine();
                     bookName = scanner.nextLine();
                     student.returnPrevisouslyBook(bookName);
+                    System.out.println("Thank you ! for returning the previous book.");
                     break;
                 case MY_ISSUES_BOOK:
-                    System.out.println("");
+                    System.out.println("list of your issued books are:");
+                    bookName = scanner.nextLine();
+                    library.myIssueBook();
                     break;
                 default:
+                    System.out.println("e");
             }
         } while (userinput != 4);
         scanner.close();
