@@ -9,6 +9,17 @@ package definitions;
 public class Library {
     private Book[] currentlyAvailable;
 
+    public Library() {
+        this.currentlyAvailable = new Book[100];
+        for (int i = 0; i < currentlyAvailable.length; i++) {
+            currentlyAvailable[i] = new Book();
+        }
+    }
+
+    public Library(Book[] currentlyAvailable) {
+        this.currentlyAvailable = currentlyAvailable;
+    }
+
     public Book[] getCurrentlyAvailable() {
         return currentlyAvailable.clone();
     }
