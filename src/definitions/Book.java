@@ -10,4 +10,14 @@ public class Book {
     private String bookName;
     private String authorName;
     private String numberISBN;
+
+    /**
+     * This method returns the name of the book.
+     *
+     * @return The name of the book.
+     */
+
+    public String getName() {
+        return " ";
+    }
 }
