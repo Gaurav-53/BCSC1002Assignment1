@@ -14,8 +14,8 @@ public class Book {
     private String numberISBN;
 
     public Book() {
-        bookName = "Let us C";
-        authorName = "xyz";
+        bookName = "Let us Java";
+        authorName = "Yashavant";
         numberISBN = "34567892378654";
     }
 
