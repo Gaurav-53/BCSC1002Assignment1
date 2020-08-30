@@ -110,4 +110,15 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getNamesOfBookIssued());
         return result;
     }
+
+    /**
+     * This method return the name of the book that you want to return.
+     *
+     * @param bookName1 the name of the book that you return.
+     */
+
+    public void returnPrevisouslyBook(String bookName1) {
+        System.out.println(bookName1 + " " + "is return");
+    }
+
 }

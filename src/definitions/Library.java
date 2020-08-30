@@ -47,4 +47,8 @@ public class Library {
     public String toString() {
         return Arrays.toString(currentlyAvailable);
     }
+
+    public void issueBook(String bookName) {
+        System.out.println(bookName + " " + "is  issue for you from the library");
+    }
 }
